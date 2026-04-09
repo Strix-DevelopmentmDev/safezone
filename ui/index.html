@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Safezone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app" class="hidden">
+    <div class="panel">
+      <div class="top">
+        <h1>SafeZone Creator</h1>
+        <button id="close">✕</button>
+      </div>
+
+      <div class="box">
+        <label>Zone Name</label>
+        <input id="name" type="text" placeholder="Hospital Safe Zone">
+
+        <label>Zone Type</label>
+        <select id="zoneType">
+          <option value="safe">Safe Zone</option>
+          <option value="staff">Staff Sit Area</option>
+        </select>
+
+        <label>Radius</label>
+        <input id="radius" type="number" value="25">
+
+        <button id="createBtn">Create Zone At My Position</button>
+      </div>
+
+      <div class="box">
+        <h2>Saved Zones</h2>
+        <div id="zoneList"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
